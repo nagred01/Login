@@ -56,8 +56,7 @@
                                         "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
                                         "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
                                         "cssClass": "form-control component-group",
-                                        "fieldCssClass": "",
-                                        secureTextEntry : {true},
+                                        "fieldCssClass": "",                                     
                                         style : styles.inputStyle,
                                         "bindingMode": "",
                                         onChangeText: function (val) {
