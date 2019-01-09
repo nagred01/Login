@@ -63,6 +63,7 @@
                                             componentState.setState({ password: val })
                                         },
                                          autoCapitalize : 'none',
+                                         secureTextEntry,
                                         placeHolder: "Enter the Password"
                                     }, [])
                                 ]),
