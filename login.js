@@ -8,6 +8,7 @@
     var _reactNative = ReactNative;
     var _nativebase = NativeBase;
     var root = this;
+    
 
     return react_1.createElement(_nativebase.Container, {style:styles.containerStyle }, [
                 react_1.createElement(_reactNative.View, {
@@ -72,7 +73,10 @@
                                 },[react_1.createElement(_reactNative.Text, {
                                     "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023",
                                     "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023_Label",
-                                    style : styles.loginButtonLabel
+                                    style : styles.loginButtonLabel,
+                                    onPress: function(){
+                                           componentState.loginCall()
+                                    }
                                 }, ["Login"])]
                             )
 
@@ -81,4 +85,3 @@
         
     
 })
-    
