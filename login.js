@@ -57,13 +57,14 @@
                                         "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
                                         "cssClass": "form-control component-group",
                                         "fieldCssClass": "",
+                                        secureTextEntry : {true},
                                         style : styles.inputStyle,
                                         "bindingMode": "",
                                         onChangeText: function (val) {
                                             componentState.setState({ password: val })
                                         },
                                          autoCapitalize : 'none',
-                                         secureTextEntry :"true" ,
+                                        
                                         placeHolder: "Enter the Password"
                                     }, [])
                                 ]),
