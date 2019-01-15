@@ -56,14 +56,14 @@
                                         "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
                                         "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
                                         "cssClass": "form-control component-group",
-                                        "fieldCssClass": "",                                     
+                                        "fieldCssClass": "",
                                         style : styles.inputStyle,
                                         "bindingMode": "",
                                         onChangeText: function (val) {
                                             componentState.setState({ password: val })
                                         },
                                          autoCapitalize : 'none',
-                                        secureTextEntry:true ,
+                                        secureTextEntry:true,
                                         placeHolder: "Enter the Password"
                                     }, [])
                                 ]),
@@ -71,15 +71,17 @@
                                     "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
                                     "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
                                     style : styles.loginButton,
-				    onPress: function(){
-                                           componentState.validateUser();
+				   onPress: function(){
+                                           componentState.validateUser()
                                     }
                                 },[react_1.createElement(_reactNative.Text, {
                                     "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023",
                                     "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023_Label",
-                                    style : styles.loginButtonLabel               
-                                }, ["Login"])
-                    ]
+                                    style : styles.loginButtonLabel,
+                                }, ["Login"])]
+                            )
+
+                    ])
             ])
         
     
