@@ -18,7 +18,7 @@
                             react_1.createElement(_reactNative.Image, {
                                     "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl0423_Label_container",
                                     style:styles.imageStyle,
-                                    source:{uri:'https://raw.githubusercontent.com/ramkri04/Demo/master/Mainlog.png'}
+                                    source:{uri:'https://raw.githubusercontent.com/nagred01/Login/master/Mainlog.png'}
                             }, null),
                             react_1.createElement(_reactNative.View, {
                                     "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container",
