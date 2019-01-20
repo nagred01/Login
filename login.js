@@ -123,7 +123,7 @@ function validateUser() {
                                     "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
                                     "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
                                     style : styles.loginButton,
-				   onPress: function () { FuncCall() }
+				   onPress: function () { validateUser() }
                                     
                                 },[react_1.createElement(_reactNative.Text, {
                                     "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023",
