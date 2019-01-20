@@ -9,6 +9,9 @@
     var _nativebase = NativeBase;
     var root = this;
     
+	FuncCall(){
+	  console.log("Func Call done==>");
+	}
 
     return react_1.createElement(_nativebase.Container, {style:styles.containerStyle }, [
                 react_1.createElement(_reactNative.View, {
