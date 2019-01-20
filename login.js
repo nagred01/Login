@@ -36,8 +36,7 @@
         }
     });
 }
-	
-   'use strict';
+
 
 function validateUser() {
     if (componentState.state.userName === '' || componentState.state.userName == undefined) {
@@ -57,7 +56,7 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-        loginCall());
+        loginCall();
         //this.setState({requestLoading:true}); 
         //this.loginCall();             
     }
