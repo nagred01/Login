@@ -9,6 +9,10 @@
     var _nativebase = NativeBase;
     var root = this;
     
+	FuncCall(){
+	  console.log("Func call done =>");
+	}
+    
 
     return react_1.createElement(_nativebase.Container, {style:styles.containerStyle }, [
                 react_1.createElement(_reactNative.View, {
@@ -72,7 +76,7 @@
                                     "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
                                     style : styles.loginButton,
 				   onPress: function(){
-                                           componentState.validateUser()
+                                           componentState.FuncCall()
                                     }
                                 },[react_1.createElement(_reactNative.Text, {
                                     "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023",
