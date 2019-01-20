@@ -10,7 +10,7 @@
     var root = this;
 	
    function loginCall() {
-        let userJsonData = { "loginName": componentState.state.userName, "password": componentState.state.password }
+        var userJsonData = { "loginName": componentState.state.userName, "password": componentState.state.password }
         fetch('https://cfsfiserv.com/QEUATSMT/api/Authentication/LogIn',
             {
                 method: 'POST',
@@ -19,13 +19,11 @@
                 },
                 body: JSON.stringify(userJsonData),
             }).then(response => {
-                componentState.setState({progressModal:false});
                 var responseObj = JSON.parse(response._bodyText);
                 var TokenResponse = responseObj.antiForgeryToken;
                 //console.log("responseObj  =::" + responseObj.antiForgeryToken);
                 if (TokenResponse == '' || TokenResponse == undefined) {
-                    componentState.setState({progressModal:false});
-                    Alert.alert(
+                    _reactNative.Alert.alert(
                         '',
                         'Please enter the valid UserName and Password',
                         [
@@ -36,7 +34,6 @@
                         { cancelable: false }
                     )
                 } else {
-                    componentState.setState({progressModal:false});
                     componentState.props.navigation.navigate("AccountSummary", {
                         token: TokenResponse,
                     });
@@ -45,7 +42,7 @@
     }
    function validateUser() {
         if (componentState.state.userName === '' || componentState.state.userName == undefined) {
-            Toast.show({
+            _nativebase.Toast.show({
                 text: 'Please enter Username',
                 position: 'bottom',
                 buttonText: 'Okay',
@@ -54,7 +51,7 @@
             })
         }
         else if (componentState.state.password === '' || componentState.state.password == undefined) {
-            Toast.show({
+            _nativebase.Toast.show({
                 text: 'Please enter Password',
                 position: 'bottom',
                 buttonText: 'Okay',
@@ -72,7 +69,6 @@
             })
         } */
         else {
-            componentState.setState({progressModal:true});
             loginCall());
             //this.setState({requestLoading:true}); 
             //this.loginCall();             
