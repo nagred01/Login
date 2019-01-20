@@ -9,7 +9,7 @@
     var _nativebase = NativeBase;
     var root = this;
     
-	FuncCall(){
+	function FuncCall(){
 	  console.log("Func Call done==>");
 	}
 
