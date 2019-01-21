@@ -24,13 +24,14 @@
         var TokenResponse = responseObj.antiForgeryToken;
         //console.log("responseObj  =::" + responseObj.antiForgeryToken);
         if (TokenResponse == '' || TokenResponse == undefined) {
-            _reactNative.Alert.alert('', 'Please enter the valid UserName and Password', [{ text: '', onPress: function onPress() {
-                    return console.log('Ask me later pressed');
-                } }, { text: 'Cancel', onPress: function onPress() {
-                    return console.log('Cancel Pressed');
-                }, style: 'cancel' }, { text: 'OK', onPress: function onPress() {
-                    return console.log('OK Pressed');
-                } }], { cancelable: false });
+	_nativebase.Toast.show({
+            text: 'Please enter the valid UserName and Password',
+            position: 'bottom',
+            buttonText: 'Okay',
+            duration: 5000,
+            type: 'danger'
+        });
+            
         } else {
             componentState.props.navigation.navigate("AccountSummary", {
                 token: TokenResponse
