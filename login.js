@@ -69,6 +69,7 @@ function validateUser() {
  
 
 function activityLoader() {
+	console.log("Activity Indicator Load =>");
    return componentState.state.progressModal ? react_1.createElement(_reactNative.Modal,{
 			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
