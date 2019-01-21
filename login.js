@@ -60,7 +60,7 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-	activityLoader();
+	componentState.activityLoader();
         loginCall();
     }
 }
