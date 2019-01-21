@@ -60,6 +60,7 @@ function validateUser() {
             type: 'danger'
         });
     } else {
+	componentState.setState({progressModal:true})
         loginCall();
     }
 }
