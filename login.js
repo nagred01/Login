@@ -137,9 +137,7 @@ function validateUser() {
 			react_1.createElement(_reactNative.Modal,{
 			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
-				 visible:componentState.state.progressModal,
-				 containerStyle:{backgroundColor: 'rgba(37, 8, 10, 0.78)'},
-                                 childrenWrapperStyle:{backgroundColor: '#eee'}
+				 visible:true,
                            },[react_1.createElement(_reactNative.View,{
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
