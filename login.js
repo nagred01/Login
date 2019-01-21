@@ -71,9 +71,8 @@ function activityLoader() {
    return react_1.createElement(_reactNative.Modal,{
 			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
-				transparent:true,
+				transparent:false,
 				 visible:true,
-				 onRequestClose:function () {console.log('close modal =>'+componentState.state.progressModal)}
                            },[react_1.createElement(_reactNative.View,{
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
