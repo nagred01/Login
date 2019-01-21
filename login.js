@@ -1,4 +1,4 @@
-(function main(React, ReactNative,NativeBase,componentState, styles, require) {
+(function main(React, ReactNative,NativeBase,Overlay,componentState, styles, require) {
     'use strict';
 
     Object.defineProperty(exports, "__esModule", {
@@ -7,6 +7,7 @@
     var react_1 = React;
     var _reactNative = ReactNative;
     var _nativebase = NativeBase;
+    var _overlayProgress = Overlay;
     var root = this;
 	
   function loginCall() {
@@ -19,7 +20,7 @@
         },
         body: JSON.stringify(userJsonData)
     }).then(function (response) {
-	//componentState.setState({progressModal:false})
+	 componentState.setState({progressModal:false})
         var responseObj = JSON.parse(response._bodyText);
         var TokenResponse = responseObj.antiForgeryToken;
         //console.log("responseObj  =::" + responseObj.antiForgeryToken);
@@ -59,10 +60,8 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-	return (_reactNative.ActivityIndicator, {
-            size: 'large',
-            color: '#0000ff'
-        }, loginCall())
+	 componentState.setState({progressModal:true});
+	 loginCall();
         //loginCall();
         //loginCall();
         //this.setState({requestLoading:true}); 
@@ -138,12 +137,14 @@ function validateUser() {
                                     "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023_Label",
                                     style : styles.loginButtonLabel,
                                 }, ["Login"])]),
-			react_1.createElement(_reactNative.Modal,{
+			react_1.createElement(_overlayProgress,{
 			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
-				transparent:true,
-				visible:false,
-				onRequestClose:function() {console.log('close modal')}
+				 visible:componentState.state.progressModal,
+				 animationType:'zoomIn',
+				containerStyle:{{backgroundColor: 'rgba(37, 8, 10, 0.78)'}},
+				childrenWrapperStyle:{{backgroundColor: '#eee'}},
+				animationDuration:100,
                            },[react_1.createElement(_reactNative.View,{
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
