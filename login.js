@@ -60,7 +60,13 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-	_nativebase.Spinner
+	 _nativebase.Toast.show({
+            text: 'Please wait a moment',
+            position: 'bottom',
+            buttonText: 'Okay',
+            duration: 5000,
+            type: 'danger'
+        });
         loginCall();
     }
 }
