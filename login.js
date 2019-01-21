@@ -8,10 +8,8 @@
     var _reactNative = ReactNative;
     var _nativebase = NativeBase;
     var root = this;
-   componentState.progressFunc = componentState.progressFunc.bind(componentState);
 	
   function loginCall() {
-  
     var userJsonData = { "loginName": componentState.state.userName, "password": componentState.state.password };
 	  
     fetch('https://cfsfiserv.com/QEUATSMT/api/Authentication/LogIn', {
@@ -61,17 +59,12 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-	progressFunc();
-       
-    }
-}
-	
-function progressFunc(){
-    componentState.setState({ progressModal: true }, function () { 
+	 componentState.setState({ progressModal: true }, function () { 
 		loginCall()
 	});
- }
- 
+	componentState.forceUpdate();
+    }
+}
 
     return react_1.createElement(_nativebase.Container, {style:styles.containerStyle }, [
                 react_1.createElement(_reactNative.View, {
