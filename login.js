@@ -59,10 +59,12 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-	   componentState.setState({ progressModal: true }, function () {
-            console.log("Activity State =>" + componentState.state.progressModal);
-        });
-        loginCall();
+	return (_reactNative.ActivityIndicator, {
+            size: 'large',
+            color: '#0000ff'
+        }, loginCall())
+        //loginCall();
+        //loginCall();
         //this.setState({requestLoading:true}); 
         //this.loginCall();             
     }
