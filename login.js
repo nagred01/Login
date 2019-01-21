@@ -59,8 +59,10 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-	 componentState.setState({progressModal:true});
-	 loginCall();
+	  componentState.setState({ progressModal: true }, function () {
+            console.log("Update State Value =>" + componentState.state.progressModal);
+        });
+        loginCall();
     }
 }
 
