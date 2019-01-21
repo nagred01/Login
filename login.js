@@ -1,4 +1,4 @@
-(function main(React, ReactNative,NativeBase,OverlayComp,componentState, styles, require) {
+(function main(React, ReactNative,NativeBase,componentState, styles, require) {
     'use strict';
 
     Object.defineProperty(exports, "__esModule", {
@@ -7,7 +7,6 @@
     var react_1 = React;
     var _reactNative = ReactNative;
     var _nativebase = NativeBase;
-    var _overlayProgress = OverlayComp;
     var root = this;
 	
   function loginCall() {
@@ -62,10 +61,6 @@ function validateUser() {
     } else {
 	 componentState.setState({progressModal:true});
 	 loginCall();
-        //loginCall();
-        //loginCall();
-        //this.setState({requestLoading:true}); 
-        //this.loginCall();             
     }
 }
 
@@ -137,7 +132,7 @@ function validateUser() {
                                     "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023_Label",
                                     style : styles.loginButtonLabel,
                                 }, ["Login"])]),
-			react_1.createElement(_overlayProgress,{
+			react_1.createElement(_reactNative.Modal,{
 			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
 				 visible:componentState.state.progressModal,
