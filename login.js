@@ -68,7 +68,7 @@ function validateUser() {
 
 function activityLoader() {
 	console.log("Activity Indicator Load =>");
-   returnreact_1.createElement(_reactNative.Modal,{
+   return react_1.createElement(_reactNative.Modal,{
 			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
 				transparent:true,
@@ -82,7 +82,7 @@ function activityLoader() {
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
 				   size:'large',
 				   color:'#0000ff',
-			   },[])])])
+			   },[])])]);
 }
 
     return react_1.createElement(_nativebase.Container, {style:styles.containerStyle }, [
