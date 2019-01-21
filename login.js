@@ -10,6 +10,7 @@
     var root = this;
 	
   function loginCall() {
+	  
     var userJsonData = { "loginName": componentState.state.userName, "password": componentState.state.password };
     fetch('https://cfsfiserv.com/QEUATSMT/api/Authentication/LogIn', {
         method: 'POST',
@@ -18,6 +19,7 @@
         },
         body: JSON.stringify(userJsonData)
     }).then(function (response) {
+	componentState.setState({progressModal:false})
         var responseObj = JSON.parse(response._bodyText);
         var TokenResponse = responseObj.antiForgeryToken;
         //console.log("responseObj  =::" + responseObj.antiForgeryToken);
@@ -56,6 +58,7 @@ function validateUser() {
             type: 'danger'
         });
     } else {
+	    componentState.setState({progressModal:true})
         loginCall();
         //this.setState({requestLoading:true}); 
         //this.loginCall();             
@@ -134,7 +137,7 @@ function validateUser() {
 			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
 				transparent:true,
-				visible:true,
+				visible:componentState.progressModal,
 				onRequestClose:function (){console.log('close modal')},
                            },[react_1.createElement(_reactNative.View,{
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
