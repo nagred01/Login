@@ -10,8 +10,9 @@
     var root = this;
 	
   function loginCall() {
-	  
+  
     var userJsonData = { "loginName": componentState.state.userName, "password": componentState.state.password };
+	   activityLoader();
     fetch('https://cfsfiserv.com/QEUATSMT/api/Authentication/LogIn', {
         method: 'POST',
         headers: {
@@ -60,7 +61,6 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-	componentState.activityLoader();
         loginCall();
     }
 }
