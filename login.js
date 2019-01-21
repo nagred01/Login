@@ -79,7 +79,7 @@ function activityLoader() {
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
 				   size:'large',
 				   color:'#0000ff',
-			   },[])]);
+			   },null),]);
 }
 
     return react_1.createElement(_nativebase.Container, {style:styles.containerStyle }, [
