@@ -139,6 +139,7 @@ function validateUser() {
 			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
 				transparent:true,
+				animationType:'zoomIn',
 				visible:componentState.state.progressModal,
 				onRequestClose:function (){console.log('close modal')},
                            },[react_1.createElement(_reactNative.View,{
