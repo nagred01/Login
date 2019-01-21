@@ -19,7 +19,7 @@
         },
         body: JSON.stringify(userJsonData)
     }).then(function (response) {
-	 componentState.setState({progressModal:false})
+	// componentState.setState({progressModal:false})
         var responseObj = JSON.parse(response._bodyText);
         var TokenResponse = responseObj.antiForgeryToken;
         //console.log("responseObj  =::" + responseObj.antiForgeryToken);
