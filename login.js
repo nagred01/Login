@@ -61,7 +61,7 @@ function validateUser() {
         });
     } else {
 	componentState.setState({ progressModal: true }, function () {
-          componentState.activityLoader();
+          activityLoader();
         });
         loginCall();
     }
