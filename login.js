@@ -58,7 +58,9 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-	    componentState.setState({progressModal:true})
+	   componentState.setState({ progressModal: true }, function () {
+            console.log("Activity State =>" + componentState.state.progressModal);
+        });
         loginCall();
         //this.setState({requestLoading:true}); 
         //this.loginCall();             
