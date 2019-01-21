@@ -8,6 +8,7 @@
     var _reactNative = ReactNative;
     var _nativebase = NativeBase;
     var root = this;
+   componentState.progressFunc = componentState.progressFunc.bind(componentState);
 	
   function loginCall() {
   
