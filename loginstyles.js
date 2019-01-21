@@ -67,6 +67,9 @@
         textAlign:'center',
         justifyContent:'center'
 
+    },
+    modalView:{
+     top:'40%'
     }
 });
 });
