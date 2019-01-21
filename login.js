@@ -142,6 +142,8 @@ function validateUser() {
 			   },[react_1.createElement(_reactNative.ActivityIndicator,{
 			      "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
+				   size:'large',
+				   color:'#0000ff'
 			   },[])])])
                     ])
             ])
