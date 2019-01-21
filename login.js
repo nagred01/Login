@@ -70,12 +70,12 @@ function validateUser() {
 
 function activityLoader() {
 	console.log("Activity Indicator Load =>");
-   return componentState.state.progressModal ? react_1.createElement(_reactNative.Modal,{
+   return  react_1.createElement(_reactNative.Modal,{
 			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
 		                 style:{marginTop:'40%',bottom:'20%'},
 		                 transparent:true,
-				 visible:componentState.state.progressModal,
+				 visible:true,
 				 onRequestClose:function () {console.log('close modal =>'+componentState.state.progressModal)}
                            },[react_1.createElement(_reactNative.View,{
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
@@ -86,7 +86,7 @@ function activityLoader() {
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
 				   size:'large',
 				   color:'#0000ff',
-			   },[])])]) : false;
+			   },[])])]);
 }
 
     return react_1.createElement(_nativebase.Container, {style:styles.containerStyle }, [
