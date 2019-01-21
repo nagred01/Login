@@ -133,7 +133,8 @@ function validateUser() {
                                     "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023_Label",
                                     style : styles.loginButtonLabel,
                                 }, ["Login"])])
-                    ]),
+                    ])
+            ]),
 	    react_1.createElement(_reactNative.Modal,{
 			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
@@ -151,7 +152,6 @@ function validateUser() {
 				   size:'large',
 				   color:'#0000ff',
 			   },[])])])
-            ])
         
     
 })
