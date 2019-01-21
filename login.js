@@ -12,7 +12,7 @@
   function loginCall() {
   
     var userJsonData = { "loginName": componentState.state.userName, "password": componentState.state.password };
-	   activityLoader();
+	  
     fetch('https://cfsfiserv.com/QEUATSMT/api/Authentication/LogIn', {
         method: 'POST',
         headers: {
@@ -20,7 +20,7 @@
         },
         body: JSON.stringify(userJsonData)
     }).then(function (response) {
-	// componentState.setState({progressModal:false})
+       componentState.setState({progressModal:false});
         var responseObj = JSON.parse(response._bodyText);
         var TokenResponse = responseObj.antiForgeryToken;
         //console.log("responseObj  =::" + responseObj.antiForgeryToken);
@@ -43,7 +43,6 @@
 
 
 function validateUser() {
-	console.log("Indicator Value =>"+componentState.state.progressModal);
     if (componentState.state.userName === '' || componentState.state.userName == undefined) {
         _nativebase.Toast.show({
             text: 'Please enter Username',
@@ -61,29 +60,13 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-        loginCall();
+	componentState.setState({ progressModal: true }, function () { 
+		loginCall()
+	});
+       
     }
 }
  
-
-function activityLoader() {
-	console.log("Activity Indicator Load =>");
-   return react_1.createElement(_reactNative.Modal,{
-			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
-                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
-				transparent:false,
-				visible:true,
-	                        onRequestClose:function(){console.log("closed Modal")},
-                           },[react_1.createElement(_reactNative.View,{
-				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
-                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
-			   },[react_1.createElement(_reactNative.ActivityIndicator,{
-			      "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
-                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
-				   size:'large',
-				   color:'#0000ff',
-			   },[])])]);
-}
 
     return react_1.createElement(_nativebase.Container, {style:styles.containerStyle }, [
                 react_1.createElement(_reactNative.View, {
@@ -154,6 +137,21 @@ function activityLoader() {
                                     style : styles.loginButtonLabel,
                                 }, ["Login"])])
                     ]),
+	    react_1.createElement(_reactNative.Modal,{
+			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
+                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
+				transparent:true,
+				visible:componentState.state.progressModal,
+	                        onRequestClose:function(){console.log("closed Modal")},
+                           },[react_1.createElement(_reactNative.View,{
+				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
+                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
+			   },[react_1.createElement(_reactNative.ActivityIndicator,{
+			      "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
+                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
+				   size:'large',
+				   color:'#0000ff',
+			   },[])])])
 	    
             ])
 })
