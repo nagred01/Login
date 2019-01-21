@@ -60,12 +60,16 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-	componentState.setState({ progressModal: true }, function () { 
-		loginCall()
-	});
+	progressFunc();
        
     }
 }
+	
+function progressFunc(){
+    componentState.setState({ progressModal: true }, function () { 
+		loginCall()
+	});
+ }
  
 
     return react_1.createElement(_nativebase.Container, {style:styles.containerStyle }, [
