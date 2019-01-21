@@ -129,9 +129,20 @@ function validateUser() {
                                     "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023",
                                     "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023_Label",
                                     style : styles.loginButtonLabel,
-                                }, ["Login"])]
-                            )
-
+                                }, ["Login"])]),
+			react_1.createElement(_reactNative.Modal,{
+			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
+                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
+				transparent:true,
+				visible:true,
+				onRequestClose:function (){console.log('close modal')},
+                           },[react_1.createElement(_reactNative.View,{
+				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
+                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
+			   },[react_1.createElement(_reactNative.ActivityIndicator,{
+			      "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
+                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
+			   },[])])])
                     ])
             ])
         
