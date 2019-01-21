@@ -60,13 +60,7 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-	 _nativebase.Toast.show({
-            text: 'Please wait a moment',
-            position: 'bottom',
-            buttonText: 'Okay',
-            duration: 5000,
-            type: 'danger'
-        });
+	 _reactNative.ActivityIndicator;
         loginCall();
     }
 }
