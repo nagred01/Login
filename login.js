@@ -60,9 +60,7 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-	componentState.setState({ progressModal: true }, function () {
-          activityLoader();
-        });
+	activityLoader();
         loginCall();
     }
 }
@@ -70,16 +68,21 @@ function validateUser() {
 
 function activityLoader() {
 	console.log("Activity Indicator Load =>");
-   return react_1.createElement(_reactNative.View,{
+   returnreact_1.createElement(_reactNative.Modal,{
+			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
+                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
+				transparent:true,
+				 visible:true,
+				 onRequestClose:function () {console.log('close modal =>'+componentState.state.progressModal)}
+                           },[react_1.createElement(_reactNative.View,{
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
-				    style:styles.activityIndicatorWrapper,
 			   },[react_1.createElement(_reactNative.ActivityIndicator,{
 			      "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
 				   size:'large',
 				   color:'#0000ff',
-			   },null),]);
+			   },[])])])
 }
 
     return react_1.createElement(_nativebase.Container, {style:styles.containerStyle }, [
