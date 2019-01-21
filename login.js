@@ -140,7 +140,7 @@ function validateUser() {
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
 		                 style:{marginTop:'40%',bottom:'20%'},
 		                 transparent:true,
-				 visible:true,
+				 visible:componentState.state.progressModal,
 				 onRequestClose:function () {console.log('close modal =>'+componentState.state.progressModal)}
                            },[react_1.createElement(_reactNative.View,{
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
