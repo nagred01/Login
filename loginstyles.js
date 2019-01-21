@@ -70,7 +70,7 @@
     },
     activityIndicatorWrapper: {
     backgroundColor: '#FFFFFF',
-    top:'50',
+    top:'40%',
     borderRadius: 10,
     display: 'flex',
     alignItems: 'center',
