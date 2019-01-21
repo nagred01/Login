@@ -19,7 +19,7 @@
         },
         body: JSON.stringify(userJsonData)
     }).then(function (response) {
-	//componentState.setState({progressModal:false})
+	componentState.setState({progressModal:false})
         var responseObj = JSON.parse(response._bodyText);
         var TokenResponse = responseObj.antiForgeryToken;
         //console.log("responseObj  =::" + responseObj.antiForgeryToken);
@@ -140,7 +140,7 @@ function validateUser() {
 			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
 				transparent:false,
-				visible:componentState.state.progressModal,
+				visible:true,
                            },[react_1.createElement(_reactNative.View,{
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
