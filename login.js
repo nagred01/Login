@@ -12,7 +12,7 @@
 	backgroundColor: 'transparent',
 	},
 	viewStyle: {
-	marginTop: "20%",
+	marginTop: '20%',
 	height: Dimensions.get('window').height / 3
 	},
 	userNameItem: {
@@ -48,7 +48,7 @@
 	color: '#2B7B9F',
 	fontFamily: 'Arial',
 	fontWeight: 'bold',
-	marginBottom: 5,
+	marginBottom: '5%',
 	fontSize: 16
 	},
 	loginButton: {
@@ -57,7 +57,7 @@
 	width: '90%',
 	marginLeft: '5%',
 	marginRight: '5%',
-	marginTop: 40,
+	marginTop: '40%',
 	textAlign:'center',
 	justifyContent:'center'
 	},
