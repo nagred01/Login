@@ -16,9 +16,9 @@
 	height: Dimensions.get('window').height / 3
 	},
 	userNameItem: {
-	width: "90%",
-	marginLeft: "5%",
-	marginRight: "5%",
+	width: '90%',
+	marginLeft: '5%',
+	marginRight: '5%',
 	},
 	inputStyle: {
 	color: '#2B7B9F',
