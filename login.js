@@ -155,7 +155,7 @@ function validateUser() {
                                     source:{uri:'https://raw.githubusercontent.com/nagred01/Login/master/Mainlog.png'}
                             }, null),
                             react_1.createElement(_reactNative.View, {
-                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container",
+                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container_",
                                     style:styles.userNameItem
                                 }, [
                                         react_1.createElement(_nativebase.Label, {
@@ -178,7 +178,7 @@ function validateUser() {
                                         }, [])
                                 ]),
                                 react_1.createElement(_reactNative.View, {
-                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container",
+                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container1",
                                     style:styles.userNameItem
                                 }, [
                                     react_1.createElement(_nativebase.Label, {
