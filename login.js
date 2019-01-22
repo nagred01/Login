@@ -90,7 +90,7 @@
   function loginCall() {
     var userJsonData = { "loginName": componentState.state.userName, "password": componentState.state.password };
 	  
-    fetch('https://cfsfiserv.com/QEUATSMT/api/Authentication/LogIn', {
+    fetch('http://192.168.1.13/UI/api/Authentication/Login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
