@@ -32,10 +32,10 @@
 	borderColor: '#ccc',
 	},
 	passwordItem: {
-	width: "90%",
-	marginLeft: "5%",
-	marginRight: "5%",
-	marginTop: "5%",
+	width: '90%',
+	marginLeft: '5%',
+	marginRight: '5%',
+	marginTop: '5%',
 	},
 	passwordlabel: {
 	color: '#2B7B9F',
