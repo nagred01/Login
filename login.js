@@ -59,13 +59,6 @@ function validateUser() {
             type: 'danger'
         });
     } else {
-	    _nativebase.Toast.show({
-            text: 'Please wait a moment..',
-            position: 'top',
-            buttonText: 'Okay',
-            duration: 9000,
-            type: 'danger'
-        });
 	 componentState.setState({ progressModal: true }, function () { 
 		loginCall()
 	});
