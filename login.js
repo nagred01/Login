@@ -145,16 +145,16 @@ function validateUser() {
 
     return react_1.createElement(_nativebase.Container, {style:styles.containerStyle }, [
                 react_1.createElement(_reactNative.View, {
-                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_field_container",
+                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_field_container1",
                         style:styles.viewStyle
                     }, [
                             react_1.createElement(_reactNative.Image, {
-                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl0423_Label_container",
+                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl0423_Label_container2",
                                     style:styles.imageStyle,
                                     source:{uri:'https://raw.githubusercontent.com/nagred01/Login/style/logo.png'}
                             }, null),
                             react_1.createElement(_reactNative.View, {
-                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container",
+                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container3",
                                     style:styles.userNameItem
                                 }, [
                                         react_1.createElement(_nativebase.Label, {
@@ -163,8 +163,8 @@ function validateUser() {
                                         style : styles.userNameLabel
                                         },["UserName"]),
                                         react_1.createElement(_reactNative.TextInput, {
-                                            "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
-                                            "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
+                                            "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl041",
+                                            "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl042",
                                             "cssClass": "form-control component-group",
                                             "fieldCssClass": "",
                                             style : styles.inputStyle,
@@ -177,17 +177,17 @@ function validateUser() {
                                         }, [])
                                 ]),
                                 react_1.createElement(_reactNative.View, {
-                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container",
+                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container4",
                                     style:styles.userNameItem
                                 }, [
                                     react_1.createElement(_nativebase.Label, {
-                                        "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
-                                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label",
+                                        "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl043",
+                                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label4",
                                         style : styles.passwordlabel
                                     },["Password"]),
                                     react_1.createElement(_reactNative.TextInput, {
-                                        "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
-                                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
+                                        "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl045",
+                                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl046",
                                         "cssClass": "form-control component-group",
                                         "fieldCssClass": "",
                                         style : styles.inputStyle,
@@ -201,29 +201,29 @@ function validateUser() {
                                     }, [])
                                 ]),
                             react_1.createElement(_nativebase.Button, {
-                                    "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
-                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
+                                    "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel7",
+                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel8",
                                     style : styles.loginButton,
 				   onPress: function () { validateUser() }
                                     
                                 },[react_1.createElement(_reactNative.Text, {
                                     "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023",
-                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023_Label",
+                                    "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023_Label9",
                                     style : styles.loginButtonLabel,
                                 }, ["Login"])])
                     ]),
 	    react_1.createElement(_reactNative.Modal,{
-			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
-                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
+			       "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel_",
+                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel_1",
 				transparent:true,
 				visible:componentState.state.progressModal,
 	                        onRequestClose:function(){console.log("closed Modal")},
                            },[react_1.createElement(_reactNative.View,{
-				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
-                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
+				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel_2",
+                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel_3",
 			   },[react_1.createElement(_reactNative.ActivityIndicator,{
-			      "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
-                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
+			      "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCance_4l",
+                               "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel_5",
 				   size:'large',
 				   color:'#0000ff',
 			   },[])])])
