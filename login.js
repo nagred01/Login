@@ -62,7 +62,7 @@
 	},
 	imageStyle: {
 	width: '100%',
-	height: 180,
+	height: 190,
 	},
 	loginButtonLabel:{
 	color: '#FFFFFF',
